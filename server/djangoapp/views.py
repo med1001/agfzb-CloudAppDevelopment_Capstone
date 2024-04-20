@@ -16,14 +16,14 @@ logger = logging.getLogger(__name__)
 
 # Create your views here.
 
+from django.shortcuts import render
 
-# Create an `about` view to render a static about page
-# def about(request):
-# ...
+def about_us(request):
+    return render(request, 'djangoapp/about_us.html')
 
+def contact_us(request):
+    return render(request, 'djangoapp/contact_us.html')
 
-# Create a `contact` view to return a static contact page
-#def contact(request):
 
 # Create a `login_request` view to handle sign in request
 # def login_request(request):
